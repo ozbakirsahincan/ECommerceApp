@@ -7,14 +7,19 @@
 
 import SwiftUI
 
-struct Product: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct APIResult: Codable {
+    var data: APIProductData
 }
-
-struct Product_Previews: PreviewProvider {
-    static var previews: some View {
-        Product()
-    }
+struct APIProductData : Codable {
+    var count: Int
+    var results: [Product]
+}
+struct Product: Identifiable,Codable {
+    var id = UUID()
+    var title : String
+    var price : Int
+    var category :String 
+    var image : String
+    
+    
 }
