@@ -1,6 +1,6 @@
 # ECommerceApp
 
-Swift UI ile login page tasarlarım .
+Swift UI ile login page tasarladım .
 
 İçerisinde navigasyonlar ve girişi kontrol eden basit mekanizmalar bulunmaktadır.
 
